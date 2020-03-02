@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "caseStudy": {
@@ -49,9 +49,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js","node_modules/bootstrap/dist/js/bootstrap.min.js"
+
+            ]
           },
           "configurations": {
             "production": {
@@ -144,6 +148,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "caseStudy"
+    }
+  },
+  "defaultProject": "caseStudy",
+  "cli": {
+    "analytics": "0371543b-2638-476c-833d-c1d520f5ecf2"
+  }
 }
